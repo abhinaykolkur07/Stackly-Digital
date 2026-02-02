@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 | Page Not Found</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at right, #1b2c0e, #000);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .error-container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .error-code {
+      font-size: clamp(120px, 20vw, 200px);
+      font-weight: 900;
+      color: #b6ff2a;
+      line-height: 1;
+    }
+
+    .error-title {
+      font-size: 28px;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+
+    .error-text {
+      color: #aaa;
+      margin: 15px 0 30px;
+      font-size: 15px;
+      max-width: 420px;
+    }
+
+    .home-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: #b6ff2a;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(182, 255, 42, 0.4);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .error-title {
+        font-size: 22px;
+      }
+
+      .error-text {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-container">
+    <div class="error-code">404</div>
+    <div class="error-title">Page Not Found</div>
+    <p class="error-text">
+      Sorry, the page you are looking for doesn’t exist or has been moved.
+    </p>
+    <a href="index.html" class="home-btn">Go Back Home</a>
+  </div>
+</body>
+</html>
